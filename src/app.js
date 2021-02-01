@@ -5,6 +5,8 @@ import store from './store/store'
 import {addUsers} from './actions/users';
 import Header from './components/Header'
 import {Provider} from 'react-redux';
+import UsersList from './components/UsersList';
+import './css/styles.css';
 
 class App extends React.Component {
     componentDidMount() {
@@ -19,6 +21,7 @@ class App extends React.Component {
         return (
             <div>
             <Header />
+            <UsersList />
             </div>
         )
     }
